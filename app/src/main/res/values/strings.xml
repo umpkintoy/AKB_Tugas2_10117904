@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AKBTugas2</string>
+    <string name="hintUsername">Username</string>
+    <string name="hintPassword">Password</string>
+    <string name="loginName">LOGIN</string>
+    <string name="orText">OR</string>
+    <string name="fbConnect">CONNECT WITH FACEBOOK</string>
+    <string name="accConnect">doesn't have account? </string>
+    <string name="registerName"> Register</string>
+    <string name="dashboardName">Dashboard</string>
+
+</resources>
