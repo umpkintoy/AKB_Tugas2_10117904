@@ -15,7 +15,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public void action_almost (View v){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, AlmostActivity.class);
         startActivity(intent);
         finish();
     }
