@@ -28,17 +28,20 @@
             android:textColor="@color/bg"
             android:textSize="@dimen/SP22" />
     </Toolbar>
-
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="@dimen/DP24">
+        android:padding="@dimen/DP18"
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/username_add"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/DP40"
+            android:layout_height="@dimen/DP35"
             android:hint="@string/hintUsername"
             android:autofillHints="@string/hintUsername"
             android:layout_marginBottom="@dimen/DP10"
@@ -203,10 +206,11 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/blue_shape_btn"
                 android:text="@string/registerName"
-                android:onClick="btn_Register"
                 android:textColor="@color/lightBlue"/>
         </RelativeLayout>
 
     </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
