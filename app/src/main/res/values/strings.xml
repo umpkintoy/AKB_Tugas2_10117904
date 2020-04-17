@@ -1,12 +1,42 @@
 <resources>
     <string name="app_name">AKBTugas2</string>
     <string name="hintUsername">Username</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintPhone">Phone Number</string>
     <string name="hintPassword">Password</string>
+    <string name="hintRePassword">Retype Password</string>
     <string name="loginName">LOGIN</string>
     <string name="orText">OR</string>
     <string name="fbConnect">CONNECT WITH FACEBOOK</string>
     <string name="accConnect">doesn't have account? </string>
     <string name="registerName"> Register</string>
-    <string name="dashboardName">Dashboard</string>
+    <string name="genderMale">Male</string>
+    <string name="genderFemale">Female</string>
+    <string name="typePersonal">Personal</string>
+    <string name="typeOrganization">Organization</string>
+    <string name="address_add">Home Address</string>
+    <string name="locationAdd">Default Location</string>
+    <string name="AgreementCheck">Agree with Terms and Condition</string>
+
+    <string-array name="bloodType">
+        <item>Blood Type</item>
+        <item>AB</item>
+        <item>A</item>
+        <item>B</item>
+        <item>O</item>
+    </string-array>
+
+    <string-array name="reshus">
+        <item>Reshus</item>
+        <item>+</item>
+        <item>-</item>
+    </string-array>
+
+    <string-array name="job">
+        <item>Job</item>
+        <item>Enterpreneur</item>
+        <item>Public Employee</item>
+        <item>Other</item>
+    </string-array>
 
 </resources>
