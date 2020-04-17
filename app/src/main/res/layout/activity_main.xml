@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/DP24"
+    android:background="@color/lightBlue"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="@dimen/DP128"
+        android:layout_height="@dimen/DP128"
+        android:layout_marginBottom="@dimen/DP30"
+        android:src="@drawable/ic_welcome_logo"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/DP22"
+        android:hint="@string/hintUsername"
+        android:textColorHint="@color/bg"
+        android:textColor="@color/bg" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/DP22"
+        android:hint="@string/hintPassword"
+        android:textColorHint="@color/bg"
+        android:textColor="@color/bg" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DP45"
+        android:background="@drawable/white_shape_btn"
+        android:text="@string/loginName"
+        android:textColor="@color/bg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/DP8"
+        android:text="@string/orText"
+        android:textColor="@color/bg"
+        android:textSize="@dimen/DP18" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DP45"
+        android:background="@drawable/white_shape_btn"
+        android:paddingRight="@dimen/DP35"
+        android:text="@string/fbConnect"
+        android:paddingLeft="@dimen/DP35"
+        android:drawableLeft="@drawable/ic_welcome_fb_login"
+        android:textColor="@color/bg"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DP8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/DP5"
+            android:text="@string/accConnect"
+            android:textColor="@color/bg"
+            android:textSize="@dimen/DP18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/DP5"
+            android:paddingLeft="@dimen/DP2"
+            android:onClick="btn_Register"
+            android:text="@string/registerName"
+            android:textColor="@color/bg"
+            android:textSize="@dimen/DP18"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+</LinearLayout>
