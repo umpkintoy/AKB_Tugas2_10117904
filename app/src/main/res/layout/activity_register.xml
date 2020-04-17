@@ -17,7 +17,6 @@
             android:id="@+id/hearder_tag"
             android:layout_width="@dimen/DP30"
             android:layout_height="@dimen/DP30"
-            android:onClick="action_back"
             android:src="@drawable/ic_header_back"/>
 
         <TextView
@@ -206,6 +205,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/blue_shape_btn"
                 android:text="@string/registerName"
+                android:onClick="action_almost"
                 android:textColor="@color/lightBlue"/>
         </RelativeLayout>
 
