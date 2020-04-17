@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AlmostActivity">
+    tools:context=".AlmostActivity"
+    android:layout_gravity="center"
+    android:background="@color/lightBlue"
+    android:orientation="vertical"
+    android:padding="@dimen/DP45">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/almostDisplay"
+        android:textAlignment="center"
+        android:textColor="@color/bg"
+        android:layout_marginTop="@dimen/DP80"
+        android:textSize="@dimen/SP30" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/almostText"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/DP8"
+        android:textColor="@color/bg"
+        android:textSize="@dimen/SP15" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DP50"
+        android:background="@drawable/white_shape_btn"
+        android:text="@string/almostButton"
+        android:textColor="@android:color/white"
+        android:onClick="btn_Verify"/>
+
+</LinearLayout>
