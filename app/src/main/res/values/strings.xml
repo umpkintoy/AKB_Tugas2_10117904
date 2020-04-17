@@ -8,7 +8,7 @@
     <string name="loginName">LOGIN</string>
     <string name="orText">OR</string>
     <string name="fbConnect">CONNECT WITH FACEBOOK</string>
-    <string name="accConnect">doesn't have account? </string>
+    <string name="accConnect">doesnt have account? </string>
     <string name="registerName"> Register</string>
     <string name="genderMale">Male</string>
     <string name="genderFemale">Female</string>
