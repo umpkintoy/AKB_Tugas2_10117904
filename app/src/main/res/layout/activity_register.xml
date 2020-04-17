@@ -1,9 +1,212 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".RegisterActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Toolbar
+        android:id="@+id/register_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DP50"
+        android:background="@drawable/ic_header">
+
+        <ImageView
+            android:id="@+id/hearder_tag"
+            android:layout_width="@dimen/DP30"
+            android:layout_height="@dimen/DP30"
+            android:onClick="action_back"
+            android:src="@drawable/ic_header_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DP35"
+            android:text="@string/registerName"
+            android:textColor="@color/bg"
+            android:textSize="@dimen/SP22" />
+    </Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/DP24">
+
+        <EditText
+            android:id="@+id/username_add"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DP40"
+            android:hint="@string/hintUsername"
+            android:autofillHints="@string/hintUsername"
+            android:layout_marginBottom="@dimen/DP10"
+            android:inputType="textCapWords"
+            android:textColor="@color/fontTitle"/>
+
+        <EditText
+            android:id="@+id/email_add"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DP40"
+            android:hint="@string/hintEmail"
+            android:autofillHints="@string/hintEmail"
+            android:layout_marginBottom="@dimen/DP10"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/fontTitle"/>
+
+        <EditText
+            android:id="@+id/phone_add"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DP40"
+            android:hint="@string/hintPhone"
+            android:autofillHints="@string/hintPhone"
+            android:layout_marginBottom="@dimen/DP10"
+            android:inputType="number"
+            android:textColor="@color/fontTitle"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/DP10">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fontDesc"
+                android:layout_weight="@android:integer/config_shortAnimTime"
+                android:text="@string/genderMale" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/genderFemale"
+                android:textColor="@color/fontDesc"
+                android:layout_weight="@android:integer/config_shortAnimTime"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/DP10">
+
+            <Spinner
+                android:id="@+id/blood_type"
+                android:layout_width="@dimen/DP128"
+                android:layout_height="@dimen/DP30"
+                android:textColor="@color/fontDesc"
+                android:layout_weight="@android:integer/config_shortAnimTime"
+                android:entries="@array/bloodType"/>
+            <Spinner
+                android:id="@+id/reshus_type"
+                android:layout_width="@dimen/DP128"
+                android:layout_height="@dimen/DP30"
+                android:textColor="@color/fontDesc"
+                android:layout_weight="@android:integer/config_shortAnimTime"
+                android:entries="@array/reshus"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/pass_add"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DP40"
+            android:hint="@string/hintPassword"
+            android:autofillHints="@string/hintPassword"
+            android:layout_marginBottom="@dimen/DP10"
+            android:inputType="textPassword"
+            android:textColor="@color/fontTitle"/>
+
+        <EditText
+            android:id="@+id/repass_add"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DP40"
+            android:hint="@string/hintRePassword"
+            android:autofillHints="@string/hintRePassword"
+            android:layout_marginBottom="@dimen/DP10"
+            android:inputType="textPassword"
+            android:textColor="@color/fontTitle"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/DP10">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fontDesc"
+                android:layout_weight="@android:integer/config_shortAnimTime"
+                android:text="@string/typePersonal" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/typeOrganization"
+                android:textColor="@color/fontDesc"
+                android:layout_weight="@android:integer/config_shortAnimTime"/>
+
+        </RadioGroup>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DP35"
+            android:layout_marginBottom="@dimen/DP8"
+            android:entries="@array/job" />
+
+        <EditText
+            android:id="@+id/address_add"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DP40"
+            android:hint="@string/address_add"
+            android:autofillHints="@string/address_add"
+            android:layout_marginBottom="@dimen/DP10"
+            android:inputType="text"
+            android:textColor="@color/fontTitle"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DP40"
+            android:background="@drawable/location_tag"
+            android:hint="@string/locationAdd"
+            android:autofillHints="@string/locationAdd"
+            android:inputType="text"
+            android:textColor="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DP1"
+            android:layout_marginBottom="@dimen/DP8"
+            android:layout_marginLeft="@dimen/DP1"
+            android:layout_marginRight="@dimen/DP1"
+            android:background="@color/fontDesc" />
+
+        <CheckBox
+            android:id="@+id/agreement_chbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DP8"
+            android:text="@string/AgreementCheck" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/DP24">
+
+            <Button
+                android:id="@+id/regis_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_shape_btn"
+                android:text="@string/registerName"
+                android:onClick="btn_Register"
+                android:textColor="@color/lightBlue"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
