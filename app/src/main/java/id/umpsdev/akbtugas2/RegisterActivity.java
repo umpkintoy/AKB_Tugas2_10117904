@@ -14,7 +14,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
     }
 
-    public void action_back (View v){
+    public void action_almost (View v){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
