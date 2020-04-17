@@ -5,7 +5,8 @@ package id.umpsdev.akbtugas2;
  Kelas   : IF-6K
  log History
  - 16 April 2020 02.00 Layouting Main Activity
- - 17 April 2020 19.15 Layouting
+ - 17 April 2020 19.15 Layouting Register Activity
+ - 17 April 2020 23.00 Layouting Almost Activity
 
  */
 import androidx.appcompat.app.AppCompatActivity;
