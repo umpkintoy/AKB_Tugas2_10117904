@@ -17,6 +17,10 @@
     <string name="address_add">Home Address</string>
     <string name="locationAdd">Default Location</string>
     <string name="AgreementCheck">Agree with Terms and Condition</string>
+    <string name="almostDisplay">Almost There</string>
+    <string name="almostText">Thank you for registering with us. One more step,
+        you need to check your email to active your account</string>
+    <string name="almostButton">VERIFY</string>
 
     <string-array name="bloodType">
         <item>Blood Type</item>
